@@ -1,4 +1,4 @@
-# Trabalho_RDBMS
+# Trabalho RDBMS
 
 Trabalho sobre Banco de Dados Relacional para aplicação dos conhecimentos adquiridos sobre o assunto.
 
