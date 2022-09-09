@@ -12,10 +12,10 @@ CREATE TABLE professores (
     RP char(8)
 );
 
-CREATE TABLE  materias (
+CREATE TABLE materias (
+    creditos int,
     nome varchar(50),
-    ID char(3),
-    creditos int
+    ID char(3)
 );
 
 INSERT INTO alunos (primeiro_nome, sobrenome, RA)
