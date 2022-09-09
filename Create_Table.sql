@@ -7,8 +7,8 @@ CREATE TABLE alunos (
 );
 
 CREATE TABLE professores (
-    primeiro_nome varchar(25),
-    sobrenome varchar(25),
+    primeiro_nomep varchar(25),
+    sobrenomep varchar(25),
     RP char(8)
 );
 
@@ -21,7 +21,7 @@ CREATE TABLE materias (
 INSERT INTO alunos (primeiro_nome, sobrenome, RA)
 VALUES ('Gabriel', 'Sousa', '22886279');
 
-INSERT INTO professores (primeiro_nome, sobrenome, RP)
+INSERT INTO professores (primeiro_nomep, sobrenomep, RP)
 VALUES ('Leandro', 'Xastre', '00000001'),
        ('Jair', 'Bolsonaro', '00000022'),
        ('Luis Inácio', 'Lula da Silva', '00000013')
