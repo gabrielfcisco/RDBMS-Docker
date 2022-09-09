@@ -1,3 +1,5 @@
+USE Xastre;
+
 CREATE TABLE alunos (
     primeiro_nome varchar(25),
     sobrenome varchar(25),
