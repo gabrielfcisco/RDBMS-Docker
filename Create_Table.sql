@@ -10,13 +10,13 @@ CREATE TABLE professores (
     primeiro_nome varchar(25),
     sobrenome varchar(25),
     RP char(8)
-)
+);
 
 CREATE TABLE  materias (
     nome varchar(50),
     ID char(3),
     creditos int
-)
+);
 
 INSERT INTO alunos (primeiro_nome, sobrenome, RA)
 VALUES ('Gabriel', 'Sousa', '22886279');
