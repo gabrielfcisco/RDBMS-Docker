@@ -15,7 +15,7 @@ CREATE TABLE professores (
 CREATE TABLE  materias (
     nome varchar(50),
     ID char(3),
-    creditos int(2)
+    creditos integer
 )
 
 INSERT INTO alunos (primeiro_nome, sobrenome, RA)
