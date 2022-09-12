@@ -30,4 +30,14 @@ CREATE TABLE materias (
 INSERT INTO materias (nome, ID, creditos)
 VALUES ('Programacao de Computadores', '001', '4'),
        ('Cálculo', '002', '6'),
-       ('Robótica Computacional', '003', '4');
+       ('Robótica Computacional', '003', '4')
+       ('PI:DSW', '004', '5');
+       
+CREATE TABLE rel_al_prof_mat (
+    RA char(8),
+    RP char(8),
+    ID char(3)
+);
+
+INSERT INTO rel_al_prof_mat (RA, RP, ID)
+VALUES ('22886279', '0000001', '004');
