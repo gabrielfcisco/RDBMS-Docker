@@ -19,8 +19,8 @@ INSERT INTO professores (primeiro_nome, sobrenome, RP)
 VALUES ('Leandro', 'Xastre', '00000001'),
        ('Jair', 'Bolsonaro', '00000022'),
        ('Luis Inácio', 'Lula da Silva', '00000013'),
-       ('Ciro', 'Gomes', '00000012');
-       ('Simone','Tebet','00000015')
+       ('Ciro', 'Gomes', '00000012'),
+       ('Simone','Tebet','00000015');
 
 CREATE TABLE materias (
     creditos int,
@@ -31,7 +31,8 @@ CREATE TABLE materias (
 INSERT INTO materias (nome, ID, creditos)
 VALUES ('Programacao de Computadores', '001', '4'),
        ('Cálculo', '002', '6'),
-       ('Robótica Computacional', '003', '4')
+       ('Robótica Computacional', '003', '4'),
+       ('Organizaçao de sistemas de computaçai', '007', '4'),
        ('PI:DSW', '004', '5');
        
 CREATE TABLE rel_al_prof_mat (
@@ -41,4 +42,7 @@ CREATE TABLE rel_al_prof_mat (
 );
 
 INSERT INTO rel_al_prof_mat (RA, RP, ID)
-VALUES ('22896419', '0000001', '004');
+VALUES  ('22896419', '00000001', '004'),
+        ('22896419', '00000013, '002'),
+        ('22896419', '00000015, '003'),
+        ('22896419', '00000022, '007');
