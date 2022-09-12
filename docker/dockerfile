@@ -1,10 +1,14 @@
+#FROM: especifica de onde quero basear minha imagem
 FROM mysql:debian
 
+#RUN: especifica comandos rodar para inicializar o container
 RUN apt-get -y update
 RUN apt-get -y install git
 
+#ENV: Insere variáveis de ambiente
 ENV MYSQL_DATABASE Xastre
 
+#WORDIR: Acessa um diretório específico
 WORKDIR /docker-entrypoint-initdb.d/
 
 RUN git clone https://github.com/gabrielfcisco/Trabalho_RDBMS.git
