@@ -7,7 +7,8 @@ CREATE TABLE alunos (
 );
 
 INSERT INTO alunos (primeiro_nome, sobrenome, RA)
-VALUES ('Gabriel', 'Sousa', '22886279');
+VALUES ('Gabriel', 'Sousa', '22886279')
+       ('Joãozinho', 'Costa', '79864279');
 
 CREATE TABLE professores (
     primeiro_nome varchar(25),
