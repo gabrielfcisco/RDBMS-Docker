@@ -8,13 +8,12 @@ CREATE TABLE alunos (
 
 INSERT INTO alunos (primeiro_nome, sobrenome, RA)
 VALUES ('Gabriel', 'Sousa', '22886279'),
-       ('Eduardo','Silva','22886295');
-       ('Luis', 'Guilherme', '22013635');
-        ('Joao Vitor', 'Ferreira dos Santos', '22896419');
-('João Victor', 'Vasconcelos', '22024547');
-
+       ('Eduardo','Silva','22886295'),
+       ('Luis', 'Guilherme', '22013635'),
+       ('Joao Vitor', 'Ferreira dos Santos', '22896419'),
+       ('João Victor', 'Vasconcelos', '22024547'),
        ('Vitor', 'Takei', '22023740');
-       
+    
 CREATE TABLE professores (
     primeiro_nome varchar(25),
     sobrenome varchar(25),
@@ -35,10 +34,10 @@ CREATE TABLE materias (
 );
 
 INSERT INTO materias (nome, ID, creditos)
-VALUES ('Programacao de Computadores', '001', '4'),
+VALUES ('Programação de Computadores', '001', '4'),
        ('Cálculo', '002', '6'),
        ('Robótica Computacional', '003', '4'),
-       ('Organizaçao de sistemas de computaçai', '007', '4'),
+       ('Organização de Sistemas de Computação', '007', '4'),
        ('PI:DSW', '004', '5');
        
 CREATE TABLE rel_al_prof_mat (
@@ -48,15 +47,14 @@ CREATE TABLE rel_al_prof_mat (
 );
 
 INSERT INTO rel_al_prof_mat (RA, RP, ID)
-VALUES ('22886279', '0000001', '004'),
-        ('22886295','00000022','004');
-       ('22013635', '00000022', '001'),
-       ('22013635', '00000013', '003');
-       
-VALUES  ('22896419', '00000001', '004'),
-        ('22896419', '00000013, '002'),
-        ('22896419', '00000015, '003'),
-        ('22896419', '00000022, '007');
 VALUES ('22886279', '00000001', '004'),
-('22024547', '00000022', '001' );
-       ('22023740', '0000012', '002');
+       ('22886295', '00000022', '004'),
+       ('22013635', '00000022', '001'),
+       ('22013635', '00000013', '003'),
+       ('22896419', '00000001', '004'),
+       ('22896419', '00000013', '002'),
+       ('22896419', '00000015', '003'),
+       ('22896419', '00000022', '007'),
+       ('22886279', '00000001', '004'),
+       ('22024547', '00000022', '001'),
+       ('22023740', '00000012', '002');
