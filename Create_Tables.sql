@@ -11,6 +11,7 @@ VALUES ('Gabriel', 'Sousa', '22886279'),
        ('Eduardo','Silva','22886295');
        ('Luis', 'Guilherme', '22013635');
         ('Joao Vitor', 'Ferreira dos Santos', '22896419');
+('João Victor', 'Vasconcelos', '22024547');
 
 CREATE TABLE professores (
     primeiro_nome varchar(25),
@@ -54,3 +55,5 @@ VALUES  ('22896419', '00000001', '004'),
         ('22896419', '00000013, '002'),
         ('22896419', '00000015, '003'),
         ('22896419', '00000022, '007');
+VALUES ('22886279', '00000001', '004'),
+('22024547', '00000022', '001' );
