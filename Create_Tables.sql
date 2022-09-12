@@ -7,7 +7,8 @@ CREATE TABLE alunos (
 );
 
 INSERT INTO alunos (primeiro_nome, sobrenome, RA)
-VALUES ('Gabriel', 'Sousa', '22886279');
+VALUES ('Gabriel', 'Sousa', '22886279'),
+       ('Luis', 'Guilherme', '22013635');
 
 CREATE TABLE professores (
     primeiro_nome varchar(25),
@@ -40,4 +41,7 @@ CREATE TABLE rel_al_prof_mat (
 );
 
 INSERT INTO rel_al_prof_mat (RA, RP, ID)
-VALUES ('22886279', '0000001', '004');
+VALUES ('22886279', '0000001', '004'),
+       ('22013635', '00000022', '001'),
+       ('22013635', '00000013', '003');
+       
