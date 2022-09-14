@@ -7,8 +7,13 @@ RUN apt-get -y install git
 
 #ENV: Insere variáveis de ambiente
 ENV MYSQL_DATABASE Xastre
+ENV MYSQL_ROOT_PASSWORD 1234
 
 #WORDIR: Acessa um diretório específico
-WORKDIR /docker-entrypoint-initdb.d/
+WORKDIR /root
 
 RUN git clone https://github.com/gabrielfcisco/Trabalho_RDBMS.git
+
+WORKDIR /root/Trabalho_RDBMS
+
+RUN mv -i Create_Tables.sql /docker-entrypoint-initdb.d/
